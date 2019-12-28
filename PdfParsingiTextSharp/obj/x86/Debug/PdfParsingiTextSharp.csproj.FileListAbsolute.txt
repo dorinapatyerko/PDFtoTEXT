@@ -1,0 +1,14 @@
+C:\Users\patydor\Desktop\PdfParsingiTextSharp\PdfParsingiTextSharp\bin\Debug\PdfParsingiTextSharp.exe
+C:\Users\patydor\Desktop\PdfParsingiTextSharp\PdfParsingiTextSharp\bin\Debug\PdfParsingiTextSharp.pdb
+C:\Users\patydor\Desktop\PdfParsingiTextSharp\PdfParsingiTextSharp\bin\Debug\itextsharp.dll
+C:\Users\patydor\Desktop\PdfParsingiTextSharp\PdfParsingiTextSharp\obj\x86\Debug\PdfParsingiTextSharp.csproj.CopyComplete
+C:\Users\patydor\Desktop\PdfParsingiTextSharp\PdfParsingiTextSharp\obj\x86\Debug\PdfParsingiTextSharp.exe
+C:\Users\patydor\Desktop\PdfParsingiTextSharp\PdfParsingiTextSharp\obj\x86\Debug\PdfParsingiTextSharp.pdb
+C:\Users\patydor\Desktop\PdfParsingiTextSharp\PdfParsingiTextSharp\obj\x86\Debug\PdfParsingiTextSharp.csprojAssemblyReference.cache
+C:\Users\patydor\Google Drive\WORK\Notes\Progger Projects\PDFtoTEXT\PdfParsingiTextSharp\bin\Debug\PdfParsingiTextSharp.exe
+C:\Users\patydor\Google Drive\WORK\Notes\Progger Projects\PDFtoTEXT\PdfParsingiTextSharp\bin\Debug\PdfParsingiTextSharp.pdb
+C:\Users\patydor\Google Drive\WORK\Notes\Progger Projects\PDFtoTEXT\PdfParsingiTextSharp\bin\Debug\itextsharp.dll
+C:\Users\patydor\Google Drive\WORK\Notes\Progger Projects\PDFtoTEXT\PdfParsingiTextSharp\obj\x86\Debug\PdfParsingiTextSharp.csprojAssemblyReference.cache
+C:\Users\patydor\Google Drive\WORK\Notes\Progger Projects\PDFtoTEXT\PdfParsingiTextSharp\obj\x86\Debug\PdfParsingiTextSharp.csproj.CopyComplete
+C:\Users\patydor\Google Drive\WORK\Notes\Progger Projects\PDFtoTEXT\PdfParsingiTextSharp\obj\x86\Debug\PdfParsingiTextSharp.exe
+C:\Users\patydor\Google Drive\WORK\Notes\Progger Projects\PDFtoTEXT\PdfParsingiTextSharp\obj\x86\Debug\PdfParsingiTextSharp.pdb
