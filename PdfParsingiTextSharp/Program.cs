@@ -13,54 +13,43 @@ namespace PdfParsingiTextSharp
         static void Main(string[] args)
         {
 
-            //List<string> IDnumbers = new List<string>(); // Useless
+            string fullText = ExtractTextFromPdf("C:/Users/patydor/Google Drive/WORK/Notes/Progger Projects/PDFtoTEXT/Files/20200107_example.pdf");
 
-            
+            string startID = "adóazonosító jele: ";
+            string endID = "TAJ";
+            //int textLength = fullText.Length;
+            int startIndex, endIndex;
+            bool status = true;
 
-            //List<string> current = null;
-            string text = ExtractTextFromPdf("C:/Users/patydor/Google Drive/WORK/Notes/Progger Projects/PDFtoTEXT/Files/doresz.pdf");
-            
-            /*{
-                if (text.Contains("CustomerEN") && current == null)
-                    current = new List<string>();
-                else if (text.Contains("CustomerCh") && current != null)
+            while(status == true)
+                { 
+                if (fullText.Contains(startID) && fullText.Contains(endID))
                 {
-                    groups.Add(current);
-                    current = null;
+                    startIndex = fullText.IndexOf(startID, 0) + startID.Length;
+                    endIndex = fullText.IndexOf(endID, startIndex);
+                    Console.WriteLine(startIndex); // Kiirja a megtalált adószám text-béli kezdő indexét
+                    Console.WriteLine(endIndex); // Kiirja a megtalált adószám text-béli végződő indexét
+                    Console.WriteLine(fullText.Substring(startIndex, endIndex - startIndex)); //Ezt az adatot kell listában eltárolni!
+                    Console.WriteLine(fullText.Length);
+                    fullText = fullText.Remove(0, endIndex);  //(endIndex);
+                    Console.WriteLine(fullText.Length);
                 }
-                if (current != null)
-                    current.Add(text);
-            }*/
-
-            string start = "foglalkoztatási sorszám: ";
-            string end = " /";
-
-
-            //String IDnum = "NaN"; //text kezdeti értéke...
-
-            // az éppen megtalált stringre vonatkozik -> listába fűzés
-            /*
-            if (text = "")
-            {
-                Break; //kilép a ciklusból...
+                else
+                {
+                    Console.WriteLine("IDnumber is missing.");
+                    status = false;
+                }
             }
-            else */
-            
-            String IDnumber = getBetween(text, start, end);
-            //IDnumbers.Add(text);  // Szerintem ehhez nem is kell lista
-            
-            
 
-            
-            
-            //for ciklus
-            System.IO.File.WriteAllText("C:/Users/patydor/Google Drive/WORK/Notes/Progger Projects/PDFtoTEXT/Files/Fileslist.txt", IDnumber);
-            
-            System.IO.File.WriteAllText("C:/Users/patydor/Google Drive/WORK/Notes/Progger Projects/PDFtoTEXT/Files/done.txt", text);
-            Console.WriteLine(text);
+            //Destroyolt függvény maradékai.
+            //String IDnumber = getBetween(text, start, end);
+            //System.IO.File.WriteAllText("C:/Users/patydor/Google Drive/WORK/Notes/Progger Projects/PDFtoTEXT/Files/Fileslist.txt", IDnumber);
+            //IDnumbers.Add(text);  // Szerintem ehhez nem is kell lista
+
+            System.IO.File.WriteAllText("C:/Users/patydor/Google Drive/WORK/Notes/Progger Projects/PDFtoTEXT/Files/done.txt", fullText);
+            //Console.WriteLine(text);
             Console.ReadLine();
         }
-
 
         //ezek nem a mainben fognak szerepelni, hanem egy külön fileban
 
@@ -78,6 +67,7 @@ namespace PdfParsingiTextSharp
                 return text.ToString();
             }
         }
+        /*
         public static string getBetween(string strSource, string strStart, string strEnd)
         {
             int Start, End;
@@ -85,8 +75,8 @@ namespace PdfParsingiTextSharp
             {
                 Start = strSource.IndexOf(strStart, 0) + strStart.Length;
                 End = strSource.IndexOf(strEnd, Start);
-                Console.WriteLine(Start);
-                Console.WriteLine(End);
+                Console.WriteLine(Start); // Kiirja a megtalált adószám text-béli kezdő indexét
+                Console.WriteLine(End); // Kiirja a megtalált adószám text-béli végződő indexét
                 Console.WriteLine(strSource.Substring(Start, End - Start));
                 return strSource.Substring(Start, End - Start);
             }
@@ -94,6 +84,6 @@ namespace PdfParsingiTextSharp
             {
                 return "";
             }
-        }
+        }*/
     }
 }
